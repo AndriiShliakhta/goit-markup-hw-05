@@ -19,7 +19,7 @@
             <a href="./index.html" class="logo"><span class="logo-blue-part">Web</span>Studio</a>
             <ul class="nav-list">
                 <li class="nav-items">
-                    <a class="header-link nav-link" href="./index.html">Студия</a>
+                    <a class="header-link nav-link active-page" href="./index.html">Студия</a>
                 </li>
                 <li class="nav-items">
                     <a class="header-link nav-link" href="./portfolio.html">Портфолио</a>
@@ -54,7 +54,7 @@
         <section class="section section-hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
-                <button type="button" class="buttons hero-button">Заказать услугу</button>
+                <button type="button" data-modal-open class="buttons hero-button">Заказать услугу</button>
             </div>
         </section>
         <!-- Преимущества -->
@@ -355,5 +355,14 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close>
+                <img src="./images/close.svg" alt="Закрыть">
+            </button>
+            
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
