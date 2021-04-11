@@ -125,7 +125,6 @@ ul {
   line-height: 1.17;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .contacts-link {
   line-height: 1.14;
   color: var(--primery-text-color);
@@ -223,7 +222,6 @@ ul {
 .benefits-items:nth-child(4)::before {
   background-image: url('../images/Group4.svg');
 }
-
 .benefits-items:first-child {
   margin-left: 0;
 }
@@ -255,6 +253,30 @@ ul {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.services-section-subtittle {
+  width: 100%;
+  height: 70px;
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+
+  /* outline: 1px solid red; */
+}
+.services-section-items {
+  position: relative;
 }
 /* Работники компании */
 .team-section {
