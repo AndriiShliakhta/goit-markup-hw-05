@@ -123,6 +123,7 @@ ul {
 .nav-link {
   color: var(--section-title-color);
   line-height: 1.17;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link {
@@ -131,13 +132,14 @@ ul {
   fill: var(--primery-text-color);
   display: inline-flex;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover,
 .header-link:focus,
 .mail-phone:hover,
 .mail-phone:focus {
   color: var(--accent-color);
-  outline: none;
 }
 .envelope-icon {
   width: 16px;
@@ -303,6 +305,8 @@ ul {
   width: 44px;
   height: 44px;
   color: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-item-link:hover {
   background-color: var(--accent-color);
@@ -334,6 +338,8 @@ ul {
   fill: #afb1b8;
   border: 2px solid #afb1b8;
   border-radius: 4px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon:hover {
   fill: var(--accent-color);
@@ -391,10 +397,10 @@ ul {
   align-items: center;
   width: 44px;
   height: 44px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-footer-link:hover {
   background-color: var(--accent-color);
-  color: var(--white-color);
 }
 
 .social-footer-icon {
@@ -415,6 +421,9 @@ ul {
   line-height: 1.62;
   padding: 6px 22px;
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-buttons {
   margin-bottom: 50px;
@@ -424,7 +433,7 @@ ul {
 .buttons:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
-  outline: none;
+
   box-shadow: 0px 4px 4px var(--logos-buttons-shadow);
 }
 
@@ -451,6 +460,7 @@ ul {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-project-item:hover {
   box-shadow: 0px 4px 4px var(--logos-buttons-shadow);
